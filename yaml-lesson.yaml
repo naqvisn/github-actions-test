@@ -1,0 +1,36 @@
+name: ali
+age: 28
+address: "test: test"
+active: true
+key:
+    key: value
+    key2: 33
+    key3:
+        key: value
+        key2: value2
+jsobobject: {key: value, key2: 33, key3: {key: value, key2: value2}}
+
+array:
+    - item1
+    - item2
+    - { key: value}
+
+objectsArray:
+    - key: value1
+      key2: value2
+
+    - key: value
+      key2: value2
+
+long "test: test"
+    
+longText: >
+    kjskjdhaksjhd aksjdkaskdhh aksjdhkajjas
+    jsdkfjskdf
+    kjdsfkshjdf
+
+longText2: |
+    kjskjdhaksjhd aksjdkaskdhh aksjdhkajjas
+    jsdkfjskdf
+    kjdsfkshjdf
+    

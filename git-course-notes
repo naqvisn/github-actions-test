@@ -1,0 +1,16 @@
+How to link local folder to your git repo:
+
+create repo in in github
+get https link for clone
+
+create folder on mac
+type
+git init
+git remote  add origin https://github.com/naqvisn/github-actions-test.git
+got remote -v (will show they are link)
+
+to push a file from vs code type in terminal after saving
+
+git add -A
+git commit -m "first change"
+git push --set upstream orgin master (for first push only)
