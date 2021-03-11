@@ -21,6 +21,7 @@ jobs:
         shell: python
   new-windows-shell:
     runs-on: windows-latest
+    needs: ["run-shell-command"]
     steps:
       - name: show dir in powershell
         run: Get-Location
