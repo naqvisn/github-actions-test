@@ -15,6 +15,8 @@ jobs:
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
           echo "${{ github.token }}"
+          echo "env variables"
+          env
         # git clone git@gitgub:$GITHUB_REPOSITORY
         # git checkout $GITHUB_SHA
 
