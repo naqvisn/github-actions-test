@@ -6,10 +6,17 @@ jobs:
   runs-github-actions:
     runs-on: ubuntu-latest
     steps:
+
       - name: List files
         run: |
           pwd
           ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHU_WORKSPACE
+          echo "{{ github.token }}
+        # git clone git@gitgub:$GITHUB_REPOSITORY
+        # git checkout $GITHUB_SHA
 
       - name: Check Out files
         id: checkout
