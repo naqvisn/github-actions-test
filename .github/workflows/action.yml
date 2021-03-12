@@ -14,8 +14,6 @@ jobs:
       - name: Check Out files
         id: checkout
         uses: actions/checkout@v2
-      
-      - name: List files after Checkout
         run: |
           pwd
           ls -a
