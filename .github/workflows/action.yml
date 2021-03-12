@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: List files
         run: |
-          pwd
+          pwdd
           ls -a
 
       - name: Check Out files
