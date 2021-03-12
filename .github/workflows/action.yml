@@ -9,12 +9,18 @@ jobs:
       - name: List files
         run: |
           pwd
-          ls
+          ls -a
+
+      - name: Check Out files
+        id: checkout
+        uses: actions/checkout@v2
+
       - name: simple JS action
         id: greet
         uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: dino the dinasouraz
+
       - name: output Log Greeting time
         run: echo "${{ steps.greet.outputs.time }}"
 
