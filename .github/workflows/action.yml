@@ -14,7 +14,7 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHU_WORKSPACE
-          echo "{{ github.token }}
+          echo "{{ github.token }}"
         # git clone git@gitgub:$GITHUB_REPOSITORY
         # git checkout $GITHUB_SHA
 
