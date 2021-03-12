@@ -6,12 +6,16 @@ jobs:
   runs-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: List files
+        run: |
+          pwd
+          ls
       - name: simple JS action
         id: greet
         uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: dino the dinasouraz
-      - name: Log Greeting time
+      - name: output Log Greeting time
         run: echo "${{ steps.greet.outputs.time }}"
 
 
