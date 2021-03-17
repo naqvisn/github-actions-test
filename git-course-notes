@@ -14,3 +14,13 @@ to push a file from vs code type in terminal after saving
 git add -A
 git commit -m "first change"
 git push --set upstream orgin master (for first push only)
+
+*** create a pull request: ***
+
+git checkout -b develop
+make change in file
+save file
+git add -A
+git commit -m "pull-request"
+git push --set-upstream origin develop
+create a pull request
