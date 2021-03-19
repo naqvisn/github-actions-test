@@ -17,12 +17,12 @@ jobs:
         run: |
           pwd
           ls -a
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE
-          echo "${{ github.token }}"
-          echo "env variables"
-          env
+        #  echo $GITHUB_SHA
+        #  echo $GITHUB_REPOSITORY
+        #  echo $GITHUB_WORKSPACE
+        #  echo "${{ github.token }}"
+        #  echo "env variables"
+        # env
           kubectl get nodes
         # git clone git@gitgub:$GITHUB_REPOSITORY
         # git checkout $GITHUB_SHA
