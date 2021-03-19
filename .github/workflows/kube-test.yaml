@@ -1,19 +1,19 @@
-name: Actions Workflow
+name: Kube-test
 
 #on: [push, pull_request]
 on:
-  #push:
-  schedule:
-    - cron: "1 * * * *"
+  push:
+  #schedule:
+  #  - cron: "1 * * * *"
   pull_request:
     types: [closed, assigned, opened, reopened]
 
 jobs:
-  runs-github-actions:
+  runs-k8-job:
     runs-on: ubuntu-latest
     steps:
 
-      - name: List files
+      - name: Kubectl commands
         run: |
           pwd
           ls -a
@@ -23,6 +23,7 @@ jobs:
           echo "${{ github.token }}"
           echo "env variables"
           env
+          kubectl get nodes
         # git clone git@gitgub:$GITHUB_REPOSITORY
         # git checkout $GITHUB_SHA
 

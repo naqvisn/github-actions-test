@@ -24,3 +24,16 @@ git add -A
 git commit -m "pull-request"
 git push --set-upstream origin develop
 create a pull request
+
+
+Events:
+  Type     Reason                  Age                 From                               Message
+  ----     ------                  ----                ----                               -------
+  Normal   Scheduled               <unknown>           default-scheduler                  Successfully assigned vault/vault-1 to usdfw21as527v.mrshmc.com
+  Normal   SandboxChanged          39s (x12 over 59s)  kubelet, usdfw21as527v.mrshmc.com  Pod sandbox changed, it will be killed and re-created.
+  Warning  FailedCreatePodSandBox  38s (x13 over 62s)  kubelet, usdfw21as527v.mrshmc.com  Failed to create pod sandbox: rpc error: code = Unknown desc = failed to start sandbox container for pod "vault-1": Error response from daemon: OCI runtime create failed: container_linux.go:346: starting container process caused "process_linux.go:319: getting the final child's pid from pipe caused \"EOF\"": unknown
+USWLKCLK0MQJGH5-50:consul-logs U1195125$
+
+
+Crontab guru:
+https://crontab.guru/
